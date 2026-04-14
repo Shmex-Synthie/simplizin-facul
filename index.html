@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SimpliZin - MVP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>SimpliZin</h1>
+    <p>KANBAN</p>
+  </header>
+
+  <main class="layout">
+    <section class="panel form-panel">
+      <h2>Nova tarefa</h2>
+      <form id="taskForm">
+        <div class="field">
+          <label for="title">Título</label>
+          <input id="title" type="text" placeholder="Ex.: Cliente sem acesso ao e-mail" required />
+        </div>
+
+        <div class="field">
+          <label for="description">Descrição</label>
+          <textarea id="description" placeholder="Descreva a tarefa ou atendimento..."></textarea>
+        </div>
+
+        <div class="field">
+          <label for="status">Fila inicial</label>
+          <select id="status">
+            <option value="novo">Novo</option>
+            <option value="pendente">Pendente</option>
+            <option value="concluido">Concluído</option>
+            <option value="backlog">Backlog</option>
+          </select>
+        </div>
+
+        <button class="btn-primary" type="submit">Criar tarefa</button>
+      </form>
+    </section>
+
+    <section class="board-wrap">
+      <div class="panel toolbar">
+        <div class="stats" id="stats">0 tarefas registradas</div>
+        <input id="search" type="text" placeholder="Buscar por título ou descrição" />
+      </div>
+
+      <div class="board" id="board"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
