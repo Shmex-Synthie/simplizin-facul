@@ -4,7 +4,7 @@
     --line: #dbe2ea;
     --text: #1f2937;
     --muted: #6b7280;
-    --accent: #2563eb;
+    --accent: #6300d4;
     --accent-soft: #dbeafe;
     --danger: #dc2626;
     --warning: #d97706;
@@ -25,7 +25,7 @@
   }
   
   header {
-    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    background: linear-gradient(45deg, #3b3b3b, #6300d4);
     color: white;
     padding: 24px;
     box-shadow: var(--shadow);
@@ -91,6 +91,7 @@
   
   textarea {
     min-height: 90px;
+    max-height: 360px;
     resize: vertical;
   }
   
@@ -155,7 +156,7 @@
   }
   
   .novo {
-    background: #2563eb;
+    background: #6300d4;
   }
   
   .pendente {
@@ -167,7 +168,7 @@
   }
   
   .backlog {
-    background: #6b7280;
+    background: #3b3b3b;
   }
   
   .column-body {
