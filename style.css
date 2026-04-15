@@ -7,7 +7,6 @@
     --accent: #6300d4;
     --accent-soft: #dbeafe;
     --danger: #dc2626;
-    --warning: #d97706;
     --success: #16a34a;
     --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     --radius: 16px;
@@ -122,7 +121,6 @@
   
   .toolbar {
     display: flex;
-    justify-content: space-between;
     gap: 12px;
     align-items: center;
     padding: 16px 18px;
@@ -133,9 +131,6 @@
     font-size: 14px;
   }
   
-  .toolbar input {
-    max-width: 280px;
-  }
   
   .board {
     display: grid;
@@ -240,11 +235,6 @@
     color: var(--danger);
   }
   
-  .btn-success {
-    background: #dcfce7;
-    color: var(--success);
-  }
-  
   .comments {
     margin-top: 12px;
     padding-top: 12px;
@@ -314,7 +304,4 @@
       align-items: stretch;
     }
   
-    .toolbar input {
-      max-width: none;
-    }
   }
