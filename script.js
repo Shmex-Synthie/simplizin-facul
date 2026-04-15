@@ -6,7 +6,7 @@ const columns = [
   ];
   
   const state = {
-    tasks: JSON.parse(localStorage.getItem("simplizin_tasks")) || sampleTasks,
+    tasks: JSON.parse(localStorage.getItem("simplizin_tasks")) || [],
     search: "",
   };
   
